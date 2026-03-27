@@ -1,1 +1,2 @@
-assert(SMODS.load_file("src/backs.lua"))()
+assert(SMODS.load_file("content/backs.lua"))()
+assert(SMODS.load_file("atlas/atlas.lua"))()
