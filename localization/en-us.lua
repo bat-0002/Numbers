@@ -37,6 +37,22 @@ return {
                     "{s:0.6}{C:inactive}(abandoned and checkered are currently bugged{}{}",
                 }
             }
+        },
+        Joker = {
+            j_bstuff_fake_bloodstone = {
+                name = "Fake Bloodstone",
+                text = {
+                    "{C:green}#1# in #2#{} chance for",
+                    "played cards with",
+                    "{C:hearts}Heart{} suit give",
+                    "{X:mult,C:white} X#3# {} Mult when scored",
+                },
+                unlock = {
+                    "Have at least {E:1,C:attention}#1#",
+                    "cards with {E:1,C:attention}#2#",
+                    "suit in your deck",
+                },
+            }
         }
     }
 }

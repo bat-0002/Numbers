@@ -9,7 +9,7 @@ SMODS.Atlas {
 SMODS.Atlas {
     key = "sleeves",
     path = "sleeves.png",
-    px = 71,
+    px = 72,
     py = 95
 }
 -- mod icon
@@ -18,4 +18,11 @@ SMODS.Atlas {
     path = "badge.png",
     px = 34,
     py = 34
+}
+-- jokers
+SMODS.Atlas {
+    key = "jokers",
+    path = "badge.png",
+    px = 71,
+    py = 95,
 }
