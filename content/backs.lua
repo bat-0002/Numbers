@@ -21,7 +21,7 @@ SMODS.Back {
 -- All Deck
 SMODS.Back {
     key = "all",
-    -- atlas = 'decks',
+    atlas = 'decks',
     pos = { x = 1, y = 0 },
     config = {
         discards = 1, -- red deck
@@ -42,7 +42,7 @@ SMODS.Back {
         return { vars = { self.config.discards, self.config.dollars, self.config.extra_hand_bonus, self.config.extra_discard_bonus, self.config.no_interest, self.config.vouchers, self.config.consumables, self.config.consumable_slot, self.config.spectral_rate, self.config.hand_size, self.config.ante_scaling, self.config.randomize_rank_suit, self.config.no_faces, { localize { type = 'name_text', key = 'tag_double', set = 'Tag' } } } }
     end,
     apply = function(self, back)
-        G.E_MANAGER:add_event(Event({
+        G.E_MANAGER:add_event(Event({ -- checkered deck
             func = function()
                 for k, v in pairs(G.playing_cards) do
                     if v.base.suit == 'Clubs' then
@@ -56,7 +56,7 @@ SMODS.Back {
             end
         }))
     end,
-    calculate = function(self, back, context)
+    calculate = function(self, back, context) -- anaglyph
         if context.round_eval and G.GAME.last_blind and G.GAME.last_blind.boss then
             G.E_MANAGER:add_event(Event({
                 func = function()
@@ -67,10 +67,11 @@ SMODS.Back {
                 end
             }))
         end
-        if context.final_scoring_step then
+        if context.final_scoring_step then -- plasma
             return {
                 balance = true
             }
         end
+        G.GAME.starting_params.no_faces = true
     end
 }

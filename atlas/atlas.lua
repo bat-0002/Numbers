@@ -12,3 +12,10 @@ SMODS.Atlas {
     px = 71,
     py = 95
 }
+-- mod icon
+SMODS.Atlas {
+    key = "modicon",
+    path = "badge.png",
+    px = 34,
+    py = 34
+}

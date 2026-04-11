@@ -15,6 +15,7 @@ return {
                 text = {
                     "Applies {C:attention}all{} effects",
                     "of each {C:blue}vanilla{} deck",
+                    "{s:0.6}{C:inactive}(abandoned and checkered are currently bugged){}{}",
                 },
             },
         },
@@ -26,6 +27,14 @@ return {
                     "{C:red}effects{} of each {C:blue}vanilla{} deck",
                     "most {C:green}positive effects{}",
                     "become {C:red}negative effects{}",
+                },
+            },
+            sleeve_bstuff_sall = {
+                name = "All Sleeve",
+                text = {
+                    "Applies {C:attention}all{} effects",
+                    "of each {C:blue}vanilla{} deck",
+                    "{s:0.6}{C:inactive}(abandoned and checkered are currently bugged{}{}",
                 }
             }
         }
