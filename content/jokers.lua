@@ -13,7 +13,7 @@ SMODS.Joker {
         return { vars = {numerator, denominator, card.ability.extra.Xmult } }
     end,
     calculate = function(self, card, context)
-        if contect.individual and context.cardarea == G.play and context.other_card:is_suit("Hearts") and SMODS.pseudorandom_probability(card, 'bstuff_fake_bloodstone', 1, card.ability.extra.odds) then
+        if context.individual and context.cardarea == G.play and context.other_card:is_suit("Hearts") and SMODS.pseudorandom_probability(card, 'bstuff_fake_bloodstone', 1, card.ability.extra.odds) then
             return {
                 xmult = card.ability.extra.Xmult
             }
