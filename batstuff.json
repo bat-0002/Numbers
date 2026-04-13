@@ -1,0 +1,11 @@
+{
+    "id": "bstuff",
+    "name": "Bat's Stuff",
+    "author": ["Bat"],
+    "description": "This mod adds random ideas I have, thanks to the Balatro Discord for help, and to VanillaRemade and CardSleeves for reference",
+    "prefix": "bstuff",
+    "main_file": "batstuff.lua",
+    "badge_colour": "6326b0",
+    "version": "0.1.0", 
+    "dependencies": ["Steamodded", "Lovely"]
+}

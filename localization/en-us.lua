@@ -1,5 +1,18 @@
 return {
     descriptions = {
+        Mod = {
+            batstuff = {
+                name = "Bat's Stuff",
+                text = {
+                    "This mod adds random ideas I have",
+                    " ",
+                    "Thanks to the Balatro discord for help",
+                    "with some of the code",
+                    " ",
+                    "Also thanks to VanillaRemade and CardSleeves for reference code",
+                }
+            }
+        },
         Back = {
             b_bstuff_none = {
                 name = "None Deck",

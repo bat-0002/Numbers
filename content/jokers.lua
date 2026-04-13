@@ -13,9 +13,7 @@ SMODS.Joker {
     end,
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play and context.other_card:is_suit("Hearts") and SMODS.pseudorandom_probability(card, 'bstuff_fake_bloodstone', 1, card.ability.extra.odds) then
-            return {
-                xmult = card.ability.extra.Xmult
-            }
+            return { xmult = self.config.Xmult, message = localize({ type = 'variable', key = 'a_xmult', vars = { self.config.Xmult } }), colour = G.C.MULT, sound = 'multhit2' }
         end
     end
 }
